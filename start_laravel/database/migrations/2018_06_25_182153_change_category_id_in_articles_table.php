@@ -14,6 +14,7 @@ class ChangeCategoryIdInArticlesTable extends Migration
      */
     public function up()
     {
+        
         Schema::table('articles', function (Blueprint $table) {
             $table->string('category_id')->comment('分类id')->change();
         });
